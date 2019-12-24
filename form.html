@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Web Accessibility Example">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Opara Princewill">
+		<title>Accessibility Form</title>
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="form.css">
+	</head>
+	<body>
+    <header>
+        
+    </header>
+    <div class="main">
+        <div >
+            <img src="airplane-big.jpg" width="100%" alt="website logo">
+        </div>
+        <div>
+            <h1>Booking Form</h1>
+            <h3 id="success"></h3>
+        </div>
+        <form id="form">
+            <div class="trip-type">
+                <div>
+                    <label>
+                        <input type="radio" name="trip" value="round-trip" checked>
+                        Round Trip
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="trip" value="one-way">
+                        One Way
+                    </label>
+                </div>
+            </div>
+            <div class="locations">
+                <div>
+                    <label for="from">From</label>
+                    <select id="from" name="from" class="input">
+                        <option></option>
+                        <option>Port Harcourt</option>
+                        <option>Abuja</option>
+                        <option>Lagos</option>
+                        <option>Owerri</option>
+                        <option>Enugu</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Destination">To</label>
+                    <select id="Destination" name="destination" class="input">
+                        <option></option>
+                        <option>Port Harcourt</option>
+                        <option>Abuja</option>
+                        <option>Lagos</option>
+                        <option>Owerri</option>
+                        <option>Enugu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="date">
+                <div class="departure">
+                    <label for="departure-date">Departure Date</label>
+                    <input id="departure-date" name="departure-date" type="date" class="input">
+                </div>
+                <div class="return">
+                    <label for="return-date">Return Date</label>
+                    <input id="return-date" name="return-date" type="date" class="input">
+                </div>
+            </div>
+            <div class="passengers">
+                <div>
+                    <label for="adult">Adult</span></label>
+                    <select id="adult" name="adult" class="input">
+                        <option></option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="child">Child</label>
+                    <select id="child" name="child" class="input">
+                        <option></option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="infant">Infant</label>
+                    <select id="infant" name="infant" class="input">
+                        <option></option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="check-out">
+                <div class="confirm-check">
+                    <input id="confirm" type="checkbox" name="check-confirm" aria-required="true">
+                    <label for="confirm" class="required">Do you want to continue with the Search</label>                    
+                </div>
+                <div class="validate">
+                    <div>
+                        <button id="book">Flight Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+	<script type="text/javascript" src="form.js"></script>
+	</body>
+</html>

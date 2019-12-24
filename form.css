@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    border: 0;
+    outline: 0;
+}
+body {
+    background-color: beige;
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.success {
+    color: green;
+}
+.required, .failure {
+    color: red;
+}
+.main {
+    width: 50%;
+    margin: 30px auto;
+    box-shadow: 0 0 10px #a7a6a6;
+    background-color: #ebe6e6c7;
+}
+
+
+form {
+    margin: 0 30px;
+}
+form > div:not(:last-child) {
+    margin: 20px 0;
+}
+
+form > div:not(:last-child),
+.locations div, .date div,
+.passengers div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.locations div, .date div,
+.passengers div{
+    align-items: center;
+}
+
+.trip-type, .passengers div {
+    width: 32%;
+}
+
+.locations, .date, .passengers {
+    width: 100%;
+}
+.locations div, .date div {
+    width: 48%;
+}
+.locations div label,
+.date div label,
+.passengers div label{
+    padding-right: 10px;
+}
+
+.locations div select,
+.passengers div select,
+.date div input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #bcc0bfb9;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+select:focus, input:focus,
+button:focus {
+    box-shadow: 0 0 15px #617be3;
+}
+
+.locations div label,
+.passengers div label {
+    width: auto;
+}
+.date div label {
+    width: 180px;
+}
+
+.check-out {
+    padding: 30px 0;
+}
+
+.confirm-check {
+    margin: 10px 0;
+    text-align: center;
+    color: rgb(241, 13, 51);
+    font-size: 20px;
+    font-weight: bold;
+}
+#confirm {
+    margin-right: 10px;
+}
+button {
+    padding: 10px 30px;
+    margin-right: 20px;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    opacity: 1;
+    cursor: pointer;
+    letter-spacing: 0.12em;
+}
+button:hover {
+    opacity: 0.8;
+}
+#book {
+    background-color: dodgerblue;
+}
+.validate{
+    display: flex;
+    justify-content: center;
+}
+/* Small screen */
+@media screen and (max-width: 780px) {
+    .main {
+        width: 90%;
+        margin: 20px auto;
+    }
+    form > div:not(:last-child),
+    .locations div, .date div,
+    .passengers div{
+        flex-wrap: wrap;
+    }
+    .trip-type {
+        width: 70%;
+    }
+    button {
+        width: 100%;
+        font-weight: 200;
+    }
+    .locations div select,
+    .passengers div select,
+    .date div input{
+        height: 35px;
+        font-size: 16px;
+        padding: 0 5px;
+    }
+}
+
